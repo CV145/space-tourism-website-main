@@ -13,7 +13,7 @@ const HeroSection = () => {
                 </p>
             </div>
             <div className="explore-button-container">
-                <button className="explore-button">Explore</button>
+                <button className="explore-button">EXPLORE</button>
             </div>
         </section>
     );
