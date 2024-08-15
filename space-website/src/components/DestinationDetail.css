@@ -1,0 +1,46 @@
+.destination-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.destination-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.destination-content {
+    max-width: 50%;
+}
+
+.destination-content h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.destination-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.destination-meta {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.destination-meta div {
+    text-align: left;
+}
+
+.destination-meta h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.destination-meta p {
+    font-size: 28px;
+}

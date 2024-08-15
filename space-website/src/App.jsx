@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import './App.css';
+import DestinationPage from './pages/DestinationPage';
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          {/* Add other routes here */}
+          <Route path="/destination" element={<DestinationPage />} />
         </Routes>
       </Layout>
     </Router>
