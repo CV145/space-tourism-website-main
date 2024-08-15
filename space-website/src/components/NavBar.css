@@ -1,0 +1,78 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* Space the logo and nav links apart */
+    align-items: center;
+    padding: 20px 40px;
+    width: 100%;
+    /* Ensure navbar takes up the full width of the page */
+    position: relative;
+    box-sizing: border-box;
+    /* Include padding in the element's width */
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    /* Keep the logo on the left */
+}
+
+.navbar-logo img {
+    height: 40px;
+    /* Adjust the height to fit your design */
+}
+
+.navbar-line {
+    width: 100px;
+    /* Adjust the width based on your design */
+    height: 1px;
+    background-color: #ffffff;
+    /* Line color */
+    margin-left: 20px;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+    /* Padding inside the navbar list */
+    background: rgba(255, 255, 255, 0.1);
+    /* Apply the semi-transparent background to the list */
+    backdrop-filter: blur(10px);
+    /* Add a blur effect to the background */
+    justify-content: flex-end;
+    /* Align links to the right */
+    flex-grow: 1;
+    /* Pushes the navbar-list to the right by taking available space */
+}
+
+.navbar-list li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.navbar-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    display: block;
+}
+
+.navbar-list a:hover {
+    color: #d0d6f9;
+    /* Change the color on hover */
+}
+
+.navbar-list a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    height: 2px;
+    background-color: white;
+}
