@@ -1,3 +1,15 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .hero-section {
     height: 100vh;
     color: white;
@@ -8,6 +20,8 @@
     padding: 100px 100px;
     /* Adjust the padding to suit the design */
     margin: 0px 100px;
+    animation: fadeInUp 1s ease-out;
+    /* 1s is the duration of the animation, and ease-out makes it smooth */
 }
 
 .hero-text {
