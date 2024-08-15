@@ -3,13 +3,18 @@
     justify-content: space-between;
     /* Space the logo and nav links apart */
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px 0;
+    /* Keep no padding on the right */
+    padding-left: 40px;
+    /* Add padding to the left */
     width: 100%;
     /* Ensure navbar takes up the full width of the page */
     position: relative;
     box-sizing: border-box;
     /* Include padding in the element's width */
+    margin-top: 25px;
 }
+
 
 .navbar-logo {
     display: flex;
@@ -24,20 +29,27 @@
 }
 
 .navbar-line {
-    width: 100px;
+    width: 600px;
     /* Adjust the width based on your design */
-    height: 1px;
-    background-color: #ffffff;
+    height: 0.5px;
+    background-color: #ffffff72;
     /* Line color */
-    margin-left: 20px;
+    margin-left: 30px;
+    padding-left: 30px;
+    /* Existing left margin */
+    margin-right: -20px;
+    /* Negative right margin to move the line right */
+    z-index: 2;
 }
+
 
 .navbar-list {
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 10px 20px;
-    /* Padding inside the navbar list */
+    padding: 20px 10px;
+    /* Increase vertical padding to make the list taller */
+    padding-right: 50px;
     background: rgba(255, 255, 255, 0.1);
     /* Apply the semi-transparent background to the list */
     backdrop-filter: blur(10px);
@@ -46,7 +58,10 @@
     /* Align links to the right */
     flex-grow: 1;
     /* Pushes the navbar-list to the right by taking available space */
+    font-family: "Barlow";
+    font-size: 10px;
 }
+
 
 .navbar-list li {
     margin: 0 15px;
